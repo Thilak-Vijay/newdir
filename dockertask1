@@ -1,0 +1,294 @@
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-1008-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed May  1 05:41:05 UTC 2024
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   34.8% of 6.71GB   Processes:             118
+  Memory usage: 30%               Users logged in:       1
+  Swap usage:   0%                IPv4 address for ens5: 172.31.31.54
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+11 updates can be applied immediately.
+11 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Wed May  1 05:26:17 2024 from 13.48.4.202
+ubuntu@ip-172-31-31-54:~$ sudo docker image ls
+REPOSITORY                     TAG       IMAGE ID       CREATED         SIZE
+thilakvijay17/tech-inc_myapp   latest    f07d9e9aa2fc   6 minutes ago   122MB
+nginx                          latest    f07d9e9aa2fc   6 minutes ago   122MB
+nginx                          <none>    7383c266ef25   7 days ago      188MB
+ubuntu                         latest    de52d803b224   7 days ago      76.2MB
+ubuntu@ip-172-31-31-54:~$ sudo docker push thilakvijay17/tech-inc_myapp
+Using default tag: latest
+The push refers to repository [docker.io/thilakvijay17/tech-inc_myapp]
+afd73c3bd872: Preparing 
+bcfdee894739: Preparing 
+6053e339719e: Preparing 
+3e1ed584ae0e: Preparing 
+denied: requested access to the resource is denied
+ubuntu@ip-172-31-31-54:~$ docker login
+Log in with your Docker ID or email address to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
+You can log in with your password or a Personal Access Token (PAT). Using a limited-scope PAT grants better security and is required for organizations using SSO. Learn more at https://docs.docker.com/go/access-tokens/
+
+Username: thilakvijay17
+Password: 
+WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ip-172-31-31-54:~$ sudo docker push thilakvijay17/tech-inc_myapp
+Using default tag: latest
+The push refers to repository [docker.io/thilakvijay17/tech-inc_myapp]
+afd73c3bd872: Preparing 
+bcfdee894739: Preparing 
+6053e339719e: Preparing 
+3e1ed584ae0e: Preparing 
+denied: requested access to the resource is denied
+ubuntu@ip-172-31-31-54:~$ sudo docker login
+Log in with your Docker ID or email address to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
+You can log in with your password or a Personal Access Token (PAT). Using a limited-scope PAT grants better security and is required for organizations using SSO. Learn more at https://docs.docker.com/go/access-tokens/
+
+Username: thilakvijay17
+Password: 
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ip-172-31-31-54:~$ sudo docker push thilakvijay17/tech-inc_myapp
+Using default tag: latest
+The push refers to repository [docker.io/thilakvijay17/tech-inc_myapp]
+afd73c3bd872: Pushed 
+bcfdee894739: Pushed 
+6053e339719e: Pushed 
+3e1ed584ae0e: Mounted from library/ubuntu 
+latest: digest: sha256:f9f9bf64f1b85f5090d187b8b4edfb39175c66af19562bac21ee23b266b334c6 size: 1159
+ubuntu@ip-172-31-31-54:~$ sudo docker pull sanjail/do21we:v1
+Error response from daemon: pull access denied for sanjail/do21we, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+ubuntu@ip-172-31-31-54:~$ ls
+Dockerfile  index.html
+ubuntu@ip-172-31-31-54:~$ vi index.html 
+ubuntu@ip-172-31-31-54:~$ ls
+Dockerfile  index.html
+ubuntu@ip-172-31-31-54:~$ docker images
+REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE
+nginx                          latest    f07d9e9aa2fc   12 minutes ago   122MB
+thilakvijay17/tech-inc_myapp   latest    f07d9e9aa2fc   12 minutes ago   122MB
+nginx                          <none>    7383c266ef25   7 days ago       188MB
+ubuntu                         latest    de52d803b224   7 days ago       76.2MB
+ubuntu@ip-172-31-31-54:~$ sudo docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                               NAMES
+2c34d1e465af   nginx:latest   "nginx -g 'daemon of…"   12 minutes ago   Up 12 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp   test
+ubuntu@ip-172-31-31-54:~$ docker build -t nginx:latest .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  17.92kB
+Step 1/5 : FROM ubuntu
+ ---> de52d803b224
+Step 2/5 : RUN apt update -y
+ ---> Using cache
+ ---> f1aebdec8df6
+Step 3/5 : RUN apt install nginx -y
+ ---> Using cache
+ ---> c4c9e74b245d
+Step 4/5 : ADD index.html /var/www/html
+ ---> 4f228e10bf55
+Step 5/5 : CMD ["nginx", "-g", "daemon off;"]
+ ---> Running in 556733b7c498
+Removing intermediate container 556733b7c498
+ ---> 471afd0fe12f
+Successfully built 471afd0fe12f
+Successfully tagged nginx:latest
+ubuntu@ip-172-31-31-54:~$ docker images
+REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE
+nginx                          latest    471afd0fe12f   6 seconds ago    122MB
+thilakvijay17/tech-inc_myapp   latest    f07d9e9aa2fc   13 minutes ago   122MB
+nginx                          <none>    7383c266ef25   7 days ago       188MB
+ubuntu                         latest    de52d803b224   7 days ago       76.2MB
+ubuntu@ip-172-31-31-54:~$ docker run -d -p 8080:80 --name example nginx:latest
+20bc6a9816ed03f5a0a749ca1220953c2553db7919757d3a31b8e91fd954ca43
+ubuntu@ip-172-31-31-54:~$ cat Dockerfile
+FROM ubuntu
+RUN apt update -y
+RUN apt install nginx -y
+ADD index.html /var/www/html
+CMD ["nginx", "-g", "daemon off;"]
+ubuntu@ip-172-31-31-54:~$ vi Dockerfile 
+ubuntu@ip-172-31-31-54:~$ docker images
+REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE
+nginx                          latest    471afd0fe12f   15 minutes ago   122MB
+thilakvijay17/tech-inc_myapp   latest    f07d9e9aa2fc   28 minutes ago   122MB
+nginx                          <none>    7383c266ef25   7 days ago       188MB
+ubuntu                         latest    de52d803b224   7 days ago       76.2MB
+ubuntu@ip-172-31-31-54:~$ docker build -t nginx:latest
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+ubuntu@ip-172-31-31-54:~$ sudo docker build -t nginx:latest
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+ubuntu@ip-172-31-31-54:~$ cat Dockerfile 
+FROM ubuntu
+RUN apt update -y
+RUN apt install nginx -y
+ADD index.html /var/www/html
+CMD ["ngix", "g", "daen off;"]
+ubuntu@ip-172-31-31-54:~$ sudo docker build -t nginx:latest .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  17.92kB
+Step 1/5 : FROM ubuntu
+ ---> de52d803b224
+Step 2/5 : RUN apt update -y
+ ---> Using cache
+ ---> f1aebdec8df6
+Step 3/5 : RUN apt install nginx -y
+ ---> Using cache
+ ---> c4c9e74b245d
+Step 4/5 : ADD index.html /var/www/html
+ ---> Using cache
+ ---> 4f228e10bf55
+Step 5/5 : CMD ["ngix", "g", "daen off;"]
+ ---> Running in cf6c8758d53e
+Removing intermediate container cf6c8758d53e
+ ---> 0d5d8484609f
+Successfully built 0d5d8484609f
+Successfully tagged nginx:latest
+ubuntu@ip-172-31-31-54:~$ sudo docker run -d -p 3001:80 --name test2 nginx:latest
+c4722474950366df8499e3879414d0e625623dec26a9a4658fefe632318e836f
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "ngix": executable file not found in $PATH: unknown.
+ubuntu@ip-172-31-31-54:~$ docker ps -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+c47224749503   nginx:latest   "ngix g 'daen off;'"     8 seconds ago    Created         0.0.0.0:3001->80/tcp, :::3001->80/tcp   test2
+20bc6a9816ed   471afd0fe12f   "nginx -g 'daemon of…"   17 minutes ago   Up 17 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   example
+2c34d1e465af   f07d9e9aa2fc   "nginx -g 'daemon of…"   31 minutes ago   Up 31 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp       test
+ubuntu@ip-172-31-31-54:~$ sudo docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+20bc6a9816ed   471afd0fe12f   "nginx -g 'daemon of…"   17 minutes ago   Up 17 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   example
+2c34d1e465af   f07d9e9aa2fc   "nginx -g 'daemon of…"   31 minutes ago   Up 31 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp       test
+ubuntu@ip-172-31-31-54:~$ docker ps -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+c47224749503   nginx:latest   "ngix g 'daen off;'"     48 seconds ago   Created         0.0.0.0:3001->80/tcp, :::3001->80/tcp   test2
+20bc6a9816ed   471afd0fe12f   "nginx -g 'daemon of…"   18 minutes ago   Up 18 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   example
+2c34d1e465af   f07d9e9aa2fc   "nginx -g 'daemon of…"   32 minutes ago   Up 32 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp       test
+ubuntu@ip-172-31-31-54:~$ systemctl docker status
+Unknown command verb 'docker', did you mean 'cancel'?
+ubuntu@ip-172-31-31-54:~$ systemctl  status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2024-05-01 05:27:15 UTC; 43min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 2266 (dockerd)
+      Tasks: 43
+     Memory: 161.1M (peak: 298.8M)
+        CPU: 13.778s
+     CGroup: /system.slice/docker.service
+             ├─2266 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+             ├─3253 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 80 -container-ip 172.17.0.2 -container-port 80
+             ├─3265 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 80 -container-ip 172.17.0.2 -container-port 80
+             ├─3979 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080 -container-ip 172.17.0.3 -container-port 80
+             └─3986 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8080 -container-ip 172.17.0.3 -container-port 80
+
+May 01 05:41:39 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:41:39.776987219Z" level=info msg="Attempting next endpoint for push after error: denied: requested >
+May 01 05:43:17 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:43:17.254863804Z" level=error msg="Upload failed: denied: requested access to the resource is denie>
+May 01 05:43:17 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:43:17.257255195Z" level=error msg="Upload failed: denied: requested access to the resource is denie>
+May 01 05:43:17 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:43:17.257322823Z" level=info msg="Attempting next endpoint for push after error: denied: requested >
+May 01 05:45:58 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:45:58.949582828Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested>
+May 01 05:45:58 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:45:58.949619940Z" level=info msg="Ignoring extra error returned from registry" error="unauthorized:>
+May 01 05:48:23 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T05:48:23.318026026Z" level=info msg="Layer sha256:1e799b46a6c7d66d549047bf901ec6a59a8b235df32a30d5c807>
+May 01 06:06:20 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T06:06:20.052740008Z" level=info msg="Layer sha256:1e799b46a6c7d66d549047bf901ec6a59a8b235df32a30d5c807>
+May 01 06:06:58 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T06:06:58.576075396Z" level=error msg="stream copy error: reading from a closed fifo"
+May 01 06:06:58 ip-172-31-31-54 dockerd[2266]: time="2024-05-01T06:06:58.576158094Z" level=error msg="stream copy error: reading from a closed fifo"
+
+ubuntu@ip-172-31-31-54:~$ docker volums ls
+docker: 'volums' is not a docker command.
+See 'docker --help'
+ubuntu@ip-172-31-31-54:~$ sudo docker volume ls
+DRIVER    VOLUME NAME
+ubuntu@ip-172-31-31-54:~$ sudo docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+34dbbb7d9dd1   bridge    bridge    local
+53c19d42268e   host      host      local
+165043a8d305   none      null      local
+ubuntu@ip-172-31-31-54:~$ history
+    1  sudo docker image ls
+    2  sudo docker push thilakvijay17/tech-inc_myapp
+    3  docker login
+    4  sudo docker push thilakvijay17/tech-inc_myapp
+    5  sudo docker login
+    6  sudo docker push thilakvijay17/tech-inc_myapp
+    7  sudo docker pull sanjail/do21we:v1
+    8  ls
+    9  vi index.html 
+   10  ls
+   11  docker images
+   12  sudo docker ps
+   13  docker build -t nginx:latest .
+   14  docker images
+   15  docker run -d -p 8080:80 --name example nginx:latest
+   16  cat Dockerfile
+   17  vi Dockerfile 
+   18  docker images
+   19  docker build -t nginx:latest
+   20  sudo docker build -t nginx:latest
+   21  cat Dockerfile 
+   22  sudo docker build -t nginx:latest .
+   23  sudo docker run -d -p 3001:80 --name test2 nginx:latest
+   24  docker ps -a
+   25  sudo docker ps
+   26  docker ps -a
+   27  systemctl docker status
+   28  systemctl  status docker
+   29  docker volums ls
+   30  sudo docker volume ls
+   31  sudo docker network ls
+   32  history
+ubuntu@ip-172-31-31-54:~$ sudo apt update 
+Hit:1 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+11 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-31-54:~$ sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+docker.io is already the newest version (24.0.7-0ubuntu4).
+0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+ubuntu@ip-172-31-31-54:~$ sudo docker -v
+Docker version 24.0.7, build 24.0.7-0ubuntu4
