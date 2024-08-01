@@ -1,0 +1,509 @@
+ubuntu@ip-172-31-35-22:~$ sudo apt update -y
+Hit:1 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB] 
+Get:8 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [311 kB]
+Get:14 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [80.7 kB]
+Get:15 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [5244 B]
+Get:16 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [311 kB]
+Get:17 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [131 kB]
+Get:18 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [45.0 kB]
+Get:19 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [12.3 kB]
+Get:20 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [208 kB]
+Get:21 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [40.7 kB]
+Get:22 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [416 B]
+Get:23 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [14.1 kB]
+Get:24 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [3608 B]
+Get:25 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [212 B]
+Get:26 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [532 B]
+Get:27 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:28 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [112 B]
+Get:29 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [10.3 kB]
+Get:30 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [10.5 kB]
+Get:31 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [17.6 kB]
+Get:32 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1016 B]
+Get:33 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:34 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:35 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:36 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:37 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [265 kB] 
+Get:38 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [63.1 kB]
+Get:39 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [3632 B]
+Get:40 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [246 kB]
+Get:41 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [106 kB]
+Get:42 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [8632 B]
+Get:43 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [9156 B]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [208 kB]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [40.7 kB]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [420 B]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [10.6 kB]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [2808 B]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:50 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [344 B]
+Fetched 28.2 MB in 5s (5532 kB/s)                            
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+39 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-35-22:~$ sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base pigz runc ubuntu-fan
+Suggested packages:
+  ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-buildx docker-compose-v2 docker-doc rinse zfs-fuse | zfsutils
+The following NEW packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base docker.io pigz runc ubuntu-fan
+0 upgraded, 8 newly installed, 0 to remove and 39 not upgraded.
+Need to get 76.8 MB of archives.
+After this operation, 289 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 bridge-utils amd64 1.7.1-1ubuntu2 [33.9 kB]
+Get:3 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 runc amd64 1.1.12-0ubuntu3 [8599 kB]
+Get:4 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 containerd amd64 1.7.12-0ubuntu4 [38.6 MB]
+Get:5 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 dns-root-data all 2023112702~willsync1 [4450 B]
+Get:6 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 dnsmasq-base amd64 2.90-2build2 [375 kB]
+Get:7 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 docker.io amd64 24.0.7-0ubuntu4 [29.1 MB]
+Get:8 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 ubuntu-fan all 0.12.16 [35.2 kB]
+Fetched 76.8 MB in 1s (57.2 MB/s)     
+Preconfiguring packages ...
+Selecting previously unselected package pigz.
+(Reading database ... 67739 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package bridge-utils.
+Preparing to unpack .../1-bridge-utils_1.7.1-1ubuntu2_amd64.deb ...
+Unpacking bridge-utils (1.7.1-1ubuntu2) ...
+Selecting previously unselected package runc.
+Preparing to unpack .../2-runc_1.1.12-0ubuntu3_amd64.deb ...
+Unpacking runc (1.1.12-0ubuntu3) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../3-containerd_1.7.12-0ubuntu4_amd64.deb ...
+Unpacking containerd (1.7.12-0ubuntu4) ...
+Selecting previously unselected package dns-root-data.
+Preparing to unpack .../4-dns-root-data_2023112702~willsync1_all.deb ...
+Unpacking dns-root-data (2023112702~willsync1) ...
+Selecting previously unselected package dnsmasq-base.
+Preparing to unpack .../5-dnsmasq-base_2.90-2build2_amd64.deb ...
+Unpacking dnsmasq-base (2.90-2build2) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../6-docker.io_24.0.7-0ubuntu4_amd64.deb ...
+Unpacking docker.io (24.0.7-0ubuntu4) ...
+Selecting previously unselected package ubuntu-fan.
+Preparing to unpack .../7-ubuntu-fan_0.12.16_all.deb ...
+Unpacking ubuntu-fan (0.12.16) ...
+Setting up dnsmasq-base (2.90-2build2) ...
+Setting up runc (1.1.12-0ubuntu3) ...
+Setting up dns-root-data (2023112702~willsync1) ...
+Setting up bridge-utils (1.7.1-1ubuntu2) ...
+Setting up pigz (2.8-1) ...
+Setting up containerd (1.7.12-0ubuntu4) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up ubuntu-fan (0.12.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /usr/lib/systemd/system/ubuntu-fan.service.
+Setting up docker.io (24.0.7-0ubuntu4) ...
+info: Selecting GID from range 100 to 999 ...
+info: Adding group `docker' (GID 113) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Processing triggers for dbus (1.14.10-4ubuntu4) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                                                                                            
+Scanning linux images...                                                                                                                                         
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-35-22:~$ ls
+ubuntu@ip-172-31-35-22:~$ echo "Welcome to my game" >> index.html
+ubuntu@ip-172-31-35-22:~$ ls
+index.html
+ubuntu@ip-172-31-35-22:~$ touch Dockerfile
+ubuntu@ip-172-31-35-22:~$ vi Dockerfile 
+ubuntu@ip-172-31-35-22:~$ sudo docker build -t app:v1 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  14.85kB
+Error response from daemon: the Dockerfile (Dockerfile) cannot be empty
+ubuntu@ip-172-31-35-22:~$ cat Dockerfile 
+ubuntu@ip-172-31-35-22:~$ vi Dockerfile 
+ubuntu@ip-172-31-35-22:~$ cat d
+cat: d: No such file or directory
+ubuntu@ip-172-31-35-22:~$ cat Dockerfile 
+FROM ubuntu
+RUN apt update -y
+RUN apt install nginx
+ADD thilak.html /var/www/html
+CMD ["nginx", "-g", "daemon off;"]
+
+ubuntu@ip-172-31-35-22:~$ sudo docker build -t app:v1 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  15.87kB
+Step 1/5 : FROM ubuntu
+latest: Pulling from library/ubuntu
+9c704ecd0c69: Pull complete 
+Digest: sha256:2e863c44b718727c860746568e1d54afd13b2fa71b160f5cd9058fc436217b30
+Status: Downloaded newer image for ubuntu:latest
+ ---> 35a88802559d
+Step 2/5 : RUN apt update -y
+ ---> Running in e523f9ea5e11
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [261 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [424 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [16.9 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [400 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [261 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [11.5 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [12.7 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [329 kB]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [330 kB]
+Fetched 24.3 MB in 2s (11.8 MB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Removing intermediate container e523f9ea5e11
+ ---> 91120d302e36
+Step 3/5 : RUN apt install nginx
+ ---> Running in 0f7673b632b8
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  iproute2 krb5-locales libatm1t64 libbpf1 libcap2-bin libelf1t64
+  libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libmnl0
+  libpam-cap libtirpc-common libtirpc3t64 libxtables12 nginx-common
+Suggested packages:
+  iproute2-doc python3:any krb5-doc krb5-user fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  iproute2 krb5-locales libatm1t64 libbpf1 libcap2-bin libelf1t64
+  libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libmnl0
+  libpam-cap libtirpc-common libtirpc3t64 libxtables12 nginx nginx-common
+0 upgraded, 18 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2732 kB of archives.
+After this operation, 8057 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Abort.
+The command '/bin/sh -c apt install nginx' returned a non-zero code: 1
+ubuntu@ip-172-31-35-22:~$ cat Dockerfile 
+FROM ubuntu
+RUN apt update -y
+RUN apt install nginx
+ADD thilak.html /var/www/html
+CMD ["nginx", "-g", "daemon off;"]
+
+ubuntu@ip-172-31-35-22:~$ vi Dockerfile 
+ubuntu@ip-172-31-35-22:~$ sudo docker build -t app:v1 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  16.38kB
+Step 1/5 : FROM ubuntu
+ ---> 35a88802559d
+Step 2/5 : RUN apt update -y
+ ---> Using cache
+ ---> 91120d302e36
+Step 3/5 : RUN apt install nginx -y
+ ---> Running in fb1a7eb3bd7d
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  iproute2 krb5-locales libatm1t64 libbpf1 libcap2-bin libelf1t64
+  libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libmnl0
+  libpam-cap libtirpc-common libtirpc3t64 libxtables12 nginx-common
+Suggested packages:
+  iproute2-doc python3:any krb5-doc krb5-user fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  iproute2 krb5-locales libatm1t64 libbpf1 libcap2-bin libelf1t64
+  libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libmnl0
+  libpam-cap libtirpc-common libtirpc3t64 libxtables12 nginx nginx-common
+0 upgraded, 18 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2732 kB of archives.
+After this operation, 8057 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libelf1t64 amd64 0.190-1.1build4 [57.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libbpf1 amd64 1:1.3.0-2build2 [166 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libmnl0 amd64 1.0.5-2build1 [12.3 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libkrb5support0 amd64 1.20.1-6ubuntu2 [33.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libk5crypto3 amd64 1.20.1-6ubuntu2 [81.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libkeyutils1 amd64 1.6.3-3build1 [9490 B]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libkrb5-3 amd64 1.20.1-6ubuntu2 [347 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libgssapi-krb5-2 amd64 1.20.1-6ubuntu2 [142 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libtirpc-common all 1.3.4+ds-1.1build1 [8094 B]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libtirpc3t64 amd64 1.3.4+ds-1.1build1 [82.6 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libxtables12 amd64 1.8.10-3ubuntu2 [35.7 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libcap2-bin amd64 1:2.66-5ubuntu2 [34.5 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 iproute2 amd64 6.1.0-1ubuntu6 [1120 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 krb5-locales all 1.20.1-6ubuntu2 [13.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 libatm1t64 amd64 1:2.5.1-5.1build1 [22.9 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 libpam-cap amd64 1:2.66-5ubuntu2 [12.4 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 nginx-common all 1.24.0-2ubuntu7 [31.2 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 nginx amd64 1.24.0-2ubuntu7 [521 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2732 kB in 0s (6913 kB/s)
+Selecting previously unselected package libelf1t64:amd64.
+(Reading database ... 4376 files and directories currently installed.)
+Preparing to unpack .../00-libelf1t64_0.190-1.1build4_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.190-1.1build4) ...
+Selecting previously unselected package libbpf1:amd64.
+Preparing to unpack .../01-libbpf1_1%3a1.3.0-2build2_amd64.deb ...
+Unpacking libbpf1:amd64 (1:1.3.0-2build2) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../02-libmnl0_1.0.5-2build1_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.5-2build1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../03-libkrb5support0_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../04-libk5crypto3_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../05-libkeyutils1_1.6.3-3build1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-3build1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../06-libkrb5-3_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../08-libtirpc-common_1.3.4+ds-1.1build1_all.deb ...
+Unpacking libtirpc-common (1.3.4+ds-1.1build1) ...
+Selecting previously unselected package libtirpc3t64:amd64.
+Preparing to unpack .../09-libtirpc3t64_1.3.4+ds-1.1build1_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3 to /lib/x86_64-linux-gnu/libtirpc.so.3.usr-is-merged by libtirpc3t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3.0.0 to /lib/x86_64-linux-gnu/libtirpc.so.3.0.0.usr-is-merged by libtirpc3t64'
+Unpacking libtirpc3t64:amd64 (1.3.4+ds-1.1build1) ...
+Selecting previously unselected package libxtables12:amd64.
+Preparing to unpack .../10-libxtables12_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../11-libcap2-bin_1%3a2.66-5ubuntu2_amd64.deb ...
+Unpacking libcap2-bin (1:2.66-5ubuntu2) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../12-iproute2_6.1.0-1ubuntu6_amd64.deb ...
+Unpacking iproute2 (6.1.0-1ubuntu6) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../13-krb5-locales_1.20.1-6ubuntu2_all.deb ...
+Unpacking krb5-locales (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libatm1t64:amd64.
+Preparing to unpack .../14-libatm1t64_1%3a2.5.1-5.1build1_amd64.deb ...
+Unpacking libatm1t64:amd64 (1:2.5.1-5.1build1) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../15-libpam-cap_1%3a2.66-5ubuntu2_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.66-5ubuntu2) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../16-nginx-common_1.24.0-2ubuntu7_all.deb ...
+Unpacking nginx-common (1.24.0-2ubuntu7) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../17-nginx_1.24.0-2ubuntu7_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7) ...
+Setting up libkeyutils1:amd64 (1.6.3-3build1) ...
+Setting up libatm1t64:amd64 (1:2.5.1-5.1build1) ...
+Setting up libtirpc-common (1.3.4+ds-1.1build1) ...
+Setting up krb5-locales (1.20.1-6ubuntu2) ...
+Setting up libelf1t64:amd64 (0.190-1.1build4) ...
+Setting up libkrb5support0:amd64 (1.20.1-6ubuntu2) ...
+Setting up libcap2-bin (1:2.66-5ubuntu2) ...
+Setting up libmnl0:amd64 (1.0.5-2build1) ...
+Setting up libk5crypto3:amd64 (1.20.1-6ubuntu2) ...
+Setting up libxtables12:amd64 (1.8.10-3ubuntu2) ...
+Setting up libkrb5-3:amd64 (1.20.1-6ubuntu2) ...
+Setting up libpam-cap:amd64 (1:2.66-5ubuntu2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Setting up libbpf1:amd64 (1:1.3.0-2build2) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2) ...
+Setting up libtirpc3t64:amd64 (1.3.4+ds-1.1build1) ...
+Setting up iproute2 (6.1.0-1ubuntu6) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Setting up nginx (1.24.0-2ubuntu7) ...
+invoke-rc.d: unknown initscript, /etc/init.d/nginx not found.
+invoke-rc.d: could not determine current runlevel
+Setting up nginx-common (1.24.0-2ubuntu7) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Processing triggers for libc-bin (2.39-0ubuntu8.2) ...
+Removing intermediate container fb1a7eb3bd7d
+ ---> 49cee3f9e66c
+Step 4/5 : ADD thilak.html /var/www/html
+ADD failed: file not found in build context or excluded by .dockerignore: stat thilak.html: file does not exist
+ubuntu@ip-172-31-35-22:~$ ls
+Dockerfile  ]  index.html
+ubuntu@ip-172-31-35-22:~$ cat Dockerfile 
+FROM ubuntu
+RUN apt update -y
+RUN apt install nginx -y
+ADD thilak.html /var/www/html
+CMD ["nginx", "-g", "daemon off;"]
+
+ubuntu@ip-172-31-35-22:~$ vi Dockerfile 
+ubuntu@ip-172-31-35-22:~$ sudo docker build -t app:v1 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon   16.9kB
+Step 1/5 : FROM ubuntu
+ ---> 35a88802559d
+Step 2/5 : RUN apt update -y
+ ---> Using cache
+ ---> 91120d302e36
+Step 3/5 : RUN apt install nginx -y
+ ---> Using cache
+ ---> 49cee3f9e66c
+Step 4/5 : ADD index.html /var/www/html
+ ---> 1bfd3e165bd6
+Step 5/5 : CMD ["nginx", "-g", "daemon off;"]
+ ---> Running in d0652f77f85a
+Removing intermediate container d0652f77f85a
+ ---> 1126e575ab1a
+Successfully built 1126e575ab1a
+Successfully tagged app:v1
+ubuntu@ip-172-31-35-22:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+app          v1        1126e575ab1a   34 seconds ago   126MB
+ubuntu       latest    35a88802559d   7 weeks ago      78.1MB
+ubuntu@ip-172-31-35-22:~$ sudo docker run -d -p 3001:80 --name own app:v1
+8355994e662619008c82e312aea32c321848cc27f7e74fd89737d2d2b6a37606
+ubuntu@ip-172-31-35-22:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+8355994e6626   app:v1    "nginx -g 'daemon of…"   8 seconds ago   Up 7 seconds   0.0.0.0:3001->80/tcp, :::3001->80/tcp   own
+ubuntu@ip-172-31-35-22:~$ echo "My Name is Thilak" >> myfile.html
+ubuntu@ip-172-31-35-22:~$ cat myfile.html 
+My Name is Thilak
+ubuntu@ip-172-31-35-22:~$ echo "My Age is 28" >> myfile.html 
+ubuntu@ip-172-31-35-22:~$ cat myfile.html 
+My Name is Thilak
+My Age is 28
+ubuntu@ip-172-31-35-22:~$ vi Dockerfile 
+ubuntu@ip-172-31-35-22:~$ sudo docker build -t apps:v2 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  17.92kB
+Step 1/5 : FROM ubuntu
+ ---> 35a88802559d
+Step 2/5 : RUN apt update -y
+ ---> Using cache
+ ---> 91120d302e36
+Step 3/5 : RUN apt install nginx -y
+ ---> Using cache
+ ---> 49cee3f9e66c
+Step 4/5 : ADD myfile.html /var/www/html
+ ---> 6b2453b40e13
+Step 5/5 : CMD ["nginx", "-g", "daemon off;"]
+ ---> Running in b517173d9c7d
+Removing intermediate container b517173d9c7d
+ ---> 4e84c16f3c5f
+Successfully built 4e84c16f3c5f
+Successfully tagged apps:v2
+ubuntu@ip-172-31-35-22:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+apps         v2        4e84c16f3c5f   13 seconds ago   126MB
+app          v1        1126e575ab1a   6 minutes ago    126MB
+ubuntu       latest    35a88802559d   7 weeks ago      78.1MB
+ubuntu@ip-172-31-35-22:~$ sudo docker run -d -p 3002:80 --name myc apps:v2
+10fb8255ac701b12a0ee11b57ba5772aac2bda01c29c31bc7aa659eb9b1bd013
+ubuntu@ip-172-31-35-22:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+10fb8255ac70   apps:v2   "nginx -g 'daemon of…"   6 seconds ago   Up 5 seconds   0.0.0.0:3002->80/tcp, :::3002->80/tcp   myc
+8355994e6626   app:v1    "nginx -g 'daemon of…"   6 minutes ago   Up 6 minutes   0.0.0.0:3001->80/tcp, :::3001->80/tcp   own
+ubuntu@ip-172-31-35-22:~$ cat index.html 
+Welcome to my game
+ubuntu@ip-172-31-35-22:~$ rm index.html 
+ubuntu@ip-172-31-35-22:~$ ls
+Dockerfile  ]  myfile.html
+ubuntu@ip-172-31-35-22:~$ echo "My name is Thilak and I'm 28yrs old" >> index.html
+ubuntu@ip-172-31-35-22:~$ cat index.html 
+My name is Thilak and I'm 28yrs old
+ubuntu@ip-172-31-35-22:~$ vi Dockerfile 
+ubuntu@ip-172-31-35-22:~$ sudo docker build -t apps:v3 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  18.43kB
+Step 1/5 : FROM ubuntu
+ ---> 35a88802559d
+Step 2/5 : RUN apt update -y
+ ---> Using cache
+ ---> 91120d302e36
+Step 3/5 : RUN apt install nginx -y
+ ---> Using cache
+ ---> 49cee3f9e66c
+Step 4/5 : ADD index.html /var/www/html
+ ---> 4670d1a27df3
+Step 5/5 : CMD ["nginx", "-g", "daemon off;"]
+ ---> Running in fefa236bd48c
+Removing intermediate container fefa236bd48c
+ ---> 6405d0d39960
+Successfully built 6405d0d39960
+Successfully tagged apps:v3
+ubuntu@ip-172-31-35-22:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+apps         v3        6405d0d39960   14 seconds ago   126MB
+apps         v2        4e84c16f3c5f   3 minutes ago    126MB
+app          v1        1126e575ab1a   10 minutes ago   126MB
+ubuntu       latest    35a88802559d   7 weeks ago      78.1MB
+ubuntu@ip-172-31-35-22:~$ sudo docker run -d -p 3003:80 --name contain apps:v3
+d1058047e8fa950a99378a4ea24a0c08b6453117cf64f505a4a01a4e8b899e25
+ubuntu@ip-172-31-35-22:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+d1058047e8fa   apps:v3   "nginx -g 'daemon of…"   9 seconds ago   Up 8 seconds   0.0.0.0:3003->80/tcp, :::3003->80/tcp   contain
+10fb8255ac70   apps:v2   "nginx -g 'daemon of…"   3 minutes ago   Up 3 minutes   0.0.0.0:3002->80/tcp, :::3002->80/tcp   myc
+8355994e6626   app:v1    "nginx -g 'daemon of…"   9 minutes ago   Up 9 minutes   0.0.0.0:3001->80/tcp, :::3001->80/tcp   own
+
+
