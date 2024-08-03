@@ -1,0 +1,243 @@
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-1009-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Aug  3 02:31:59 UTC 2024
+
+  System load:  0.6               Temperature:           -273.1 C
+  Usage of /:   22.7% of 6.71GB   Processes:             114
+  Memory usage: 25%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.38.203
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-38-203:~$ sudo apt update -y
+Hit:1 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:8 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [317 kB]
+Get:14 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [82.7 kB]
+Get:15 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [5640 B]
+Get:16 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [318 kB]
+Get:17 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [133 kB]
+Get:18 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [45.0 kB]
+Get:19 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [12.5 kB]
+Get:20 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [208 kB]
+Get:21 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [40.7 kB]
+Get:22 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [416 B]
+Get:23 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [14.1 kB]
+Get:24 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [3608 B]
+Get:25 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [212 B]
+Get:26 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [532 B]
+Get:27 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:28 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [112 B]
+Get:29 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [10.3 kB]
+Get:30 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [10.5 kB]
+Get:31 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [265 kB]
+Get:32 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [17.6 kB]
+Get:33 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1016 B]
+Get:34 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:35 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:36 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:37 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:38 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [63.1 kB]
+Get:39 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [3632 B]
+Get:40 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [246 kB]
+Get:41 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [106 kB]
+Get:42 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [8632 B]
+Get:43 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [9164 B]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [208 kB]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [40.7 kB]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [420 B]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [10.6 kB]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [2808 B]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:50 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [344 B]
+Fetched 28.2 MB in 5s (5481 kB/s)   d
+
+Reading package lists... 7%
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+39 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-38-203:~$ sudo apt docker install -y
+E: Invalid operation docker
+ubuntu@ip-172-31-38-203:~$ sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base pigz runc ubuntu-fan
+Suggested packages:
+  ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-buildx docker-compose-v2 docker-doc rinse zfs-fuse | zfsutils
+The following NEW packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base docker.io pigz runc ubuntu-fan
+0 upgraded, 8 newly installed, 0 to remove and 39 not upgraded.
+Need to get 76.8 MB of archives.
+After this operation, 289 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 bridge-utils amd64 1.7.1-1ubuntu2 [33.9 kB]
+Get:3 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 runc amd64 1.1.12-0ubuntu3 [8599 kB]
+Get:4 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 containerd amd64 1.7.12-0ubuntu4 [38.6 MB]
+Get:5 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 dns-root-data all 2023112702~willsync1 [4450 B]
+Get:6 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 dnsmasq-base amd64 2.90-2build2 [375 kB]
+Get:7 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 docker.io amd64 24.0.7-0ubuntu4 [29.1 MB]
+Get:8 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 ubuntu-fan all 0.12.16 [35.2 kB]
+Fetched 76.8 MB in 1s (65.1 MB/s)     
+Preconfiguring packages ...
+Selecting previously unselected package pigz.
+(Reading database ... 67739 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package bridge-utils.
+Preparing to unpack .../1-bridge-utils_1.7.1-1ubuntu2_amd64.deb ...
+Unpacking bridge-utils (1.7.1-1ubuntu2) ...
+Selecting previously unselected package runc.
+Preparing to unpack .../2-runc_1.1.12-0ubuntu3_amd64.deb ...
+Unpacking runc (1.1.12-0ubuntu3) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../3-containerd_1.7.12-0ubuntu4_amd64.deb ...
+Unpacking containerd (1.7.12-0ubuntu4) ...
+Selecting previously unselected package dns-root-data.
+Preparing to unpack .../4-dns-root-data_2023112702~willsync1_all.deb ...
+Unpacking dns-root-data (2023112702~willsync1) ...
+Selecting previously unselected package dnsmasq-base.
+Preparing to unpack .../5-dnsmasq-base_2.90-2build2_amd64.deb ...
+Unpacking dnsmasq-base (2.90-2build2) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../6-docker.io_24.0.7-0ubuntu4_amd64.deb ...
+Unpacking docker.io (24.0.7-0ubuntu4) ...
+Selecting previously unselected package ubuntu-fan.
+Preparing to unpack .../7-ubuntu-fan_0.12.16_all.deb ...
+Unpacking ubuntu-fan (0.12.16) ...
+Setting up dnsmasq-base (2.90-2build2) ...
+Setting up runc (1.1.12-0ubuntu3) ...
+Setting up dns-root-data (2023112702~willsync1) ...
+Setting up bridge-utils (1.7.1-1ubuntu2) ...
+Setting up pigz (2.8-1) ...
+Setting up containerd (1.7.12-0ubuntu4) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up ubuntu-fan (0.12.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /usr/lib/systemd/system/ubuntu-fan.service.
+Setting up docker.io (24.0.7-0ubuntu4) ...
+info: Selecting GID from range 100 to 999 ...
+info: Adding group `docker' (GID 113) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Processing triggers for dbus (1.14.10-4ubuntu4) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                                                                                            
+Scanning linux images...                                                                                                                                         
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-38-203:~$ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:lts
+docker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create?name=jenkins": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+ubuntu@ip-172-31-38-203:~$ sudo docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:lts
+Unable to find image 'jenkins/jenkins:lts' locally
+lts: Pulling from jenkins/jenkins
+e9aef93137af: Pull complete 
+941a647ff357: Pull complete 
+f0f251032519: Pull complete 
+d4c632816288: Pull complete 
+07b0d8ca8ab7: Pull complete 
+995009f196ec: Pull complete 
+25f6587a42fb: Pull complete 
+a559a5c3d549: Pull complete 
+aa636159e94b: Pull complete 
+862717e1a01c: Pull complete 
+6778d605d2d1: Pull complete 
+86a41c428de5: Pull complete 
+Digest: sha256:50b22a852fa690a195453231f649ee171ee6b15a57c3b49bab4130dd97612c34
+Status: Downloaded newer image for jenkins/jenkins:lts
+be2d6685473f46816d9422a4121435858094a543ff5ef713a108589df33e75a8
+ubuntu@ip-172-31-38-203:~$ sudo docker ps
+CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS          PORTS                                                                                      NAMES
+be2d6685473f   jenkins/jenkins:lts   "/usr/bin/tini -- /u…"   19 seconds ago   Up 18 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 0.0.0.0:50000->50000/tcp, :::50000->50000/tcp   jenkins
+ubuntu@ip-172-31-38-203:~$ sudo docker log jenkins
+docker: 'log' is not a docker command.
+See 'docker --help'
+ubuntu@ip-172-31-38-203:~$ sudo docker logs jenkins
+Running from: /usr/share/jenkins/jenkins.war
+webroot: /var/jenkins_home/war
+2024-08-03 02:35:17.644+0000 [id=1]     INFO    winstone.Logger#logInternal: Beginning extraction from war file
+2024-08-03 02:35:19.102+0000 [id=1]     WARNING o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2024-08-03 02:35:19.294+0000 [id=1]     INFO    org.eclipse.jetty.server.Server#doStart: jetty-10.0.20; built: 2024-01-29T20:46:45.278Z; git: 3a745c71c23682146f262b99f4ddc4c1bc41630c; jvm 17.0.11+9
+2024-08-03 02:35:20.966+0000 [id=1]     INFO    o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2024-08-03 02:35:21.067+0000 [id=1]     INFO    o.e.j.s.s.DefaultSessionIdManager#doStart: Session workerName=node0
+2024-08-03 02:35:22.139+0000 [id=1]     INFO    hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2024-08-03 02:35:23.177+0000 [id=1]     INFO    o.e.j.s.handler.ContextHandler#doStart: Started w.@150ede8b{Jenkins v2.452.3,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2024-08-03 02:35:23.200+0000 [id=1]     INFO    o.e.j.server.AbstractConnector#doStart: Started ServerConnector@3a1dd365{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-08-03 02:35:23.220+0000 [id=1]     INFO    org.eclipse.jetty.server.Server#doStart: Started Server@f001896{STARTING}[10.0.20,sto=0] @7079ms
+2024-08-03 02:35:23.223+0000 [id=25]    INFO    winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2024-08-03 02:35:23.740+0000 [id=33]    INFO    jenkins.InitReactorRunner$1#onAttained: Started initialization
+2024-08-03 02:35:23.789+0000 [id=34]    INFO    jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2024-08-03 02:35:25.328+0000 [id=33]    INFO    jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2024-08-03 02:35:25.333+0000 [id=31]    INFO    jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2024-08-03 02:35:25.353+0000 [id=33]    INFO    jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2024-08-03 02:35:25.723+0000 [id=33]    INFO    jenkins.InitReactorRunner$1#onAttained: System config loaded
+2024-08-03 02:35:25.724+0000 [id=32]    INFO    jenkins.InitReactorRunner$1#onAttained: System config adapted
+2024-08-03 02:35:25.725+0000 [id=31]    INFO    jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2024-08-03 02:35:25.726+0000 [id=33]    INFO    jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2024-08-03 02:35:25.782+0000 [id=47]    INFO    hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2024-08-03 02:35:26.911+0000 [id=31]    INFO    jenkins.install.SetupWizard#init: 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+a7e088576f174b86868dbc79bdabf848
+
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+2024-08-03 02:36:18.014+0000 [id=34]    INFO    jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2024-08-03 02:36:18.045+0000 [id=24]    INFO    hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+2024-08-03 02:36:18.565+0000 [id=47]    INFO    h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+2024-08-03 02:36:18.566+0000 [id=47]    INFO    hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
